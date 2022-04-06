@@ -36,6 +36,9 @@ as
 delete from magacin
 where kolicina = 0
 
+insert into narudzbina
+values
+('Cara Dusana 61', 33, 1, 10)
 
 insert into pice
 values
@@ -63,6 +66,8 @@ and pice.cena = 60
 and pice.proizvodjac = 'CocaCola Company'
 and pice.procenat_alkohola = 0
 
-select magacin.id from magacin join pice on magacin.id_pica = pice.id where magacin.adresa = '10' and pice.naziv = 'Fanta' and pice.cena = 60 and pice.proizvodjac = 'CocaCola Company' and pice.procenat_alkohola = 0
+select magacin.id from magacin join pice on magacin.id_pica = pice.id 
+where magacin.adresa = '10' and pice.naziv = 'Fanta' and pice.cena = 60 and pice.proizvodjac = 'CocaCola Company' and pice.procenat_alkohola = 0
 
 select id from pice where
+
